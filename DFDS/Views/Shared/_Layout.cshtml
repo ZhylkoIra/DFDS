@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DFDS</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/normalize.css">
+        <link rel="stylesheet" href="~/css/style.css">
+        <link rel="stylesheet" href="~/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Saira:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    </environment>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" id="logo"><img src="~/images/logo.png" alt="DFDS"></a>
+            <ul class="header-nav">
+                <li><a href="#">DFDS.com</a></li>
+                <li><a href="#">Ro-Ro freight shipping</a></li>
+                <li><a href="#">Logistics services</a></li>
+                <li><a href="#">DFDS Group</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="container main-nav">
+                <li><a href="#">Tata pickup locations</a></li>
+                <li>
+                    <a href="#" class="down">Terminal activities</a>
+                    <ul class="submenu ">
+                        <li><a href="#">Immingham</a></li>
+                        <li><a href="#">Gothenburg</a></li>
+                        <li><a href="#">Ghent</a></li>
+                        <li><a href="#">Rotterdam</a></li>
+                        <li><a href="#">Esbjerg</a></li>
+                        <li><a href="#">Brevik & Moss</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="selected">General safety</a></li>
+                <li><a href="#">Report</a></li>
+                <li>
+                    <a href="#" class="down">News</a>
+                    <ul class="submenu">
+                        <li><a href="#">DFDS News</a></li>
+                        <li><a href="#">Alert Bulletins</a></li>
+                        <li><a href="#">Safety Newsletter</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer class="main-footer">
+        <div class=" container">
+            <ul class="footer-nav">
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+            <span>&copy;DFDS 2016</span>
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script>
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+        </script>
+    </environment>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

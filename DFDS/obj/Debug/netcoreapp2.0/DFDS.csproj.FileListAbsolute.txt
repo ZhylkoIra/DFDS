@@ -1,0 +1,11 @@
+c:\users\ira\source\repos\DFDS\DFDS\bin\Debug\netcoreapp2.0\DFDS.deps.json
+c:\users\ira\source\repos\DFDS\DFDS\bin\Debug\netcoreapp2.0\DFDS.runtimeconfig.json
+c:\users\ira\source\repos\DFDS\DFDS\bin\Debug\netcoreapp2.0\DFDS.runtimeconfig.dev.json
+c:\users\ira\source\repos\DFDS\DFDS\bin\Debug\netcoreapp2.0\DFDS.dll
+c:\users\ira\source\repos\DFDS\DFDS\bin\Debug\netcoreapp2.0\DFDS.pdb
+c:\users\ira\source\repos\DFDS\DFDS\obj\Debug\netcoreapp2.0\DFDS.csprojResolveAssemblyReference.cache
+c:\users\ira\source\repos\DFDS\DFDS\obj\Debug\netcoreapp2.0\DFDS.csproj.CoreCompileInputs.cache
+c:\users\ira\source\repos\DFDS\DFDS\obj\Debug\netcoreapp2.0\DFDS.AssemblyInfoInputs.cache
+c:\users\ira\source\repos\DFDS\DFDS\obj\Debug\netcoreapp2.0\DFDS.AssemblyInfo.cs
+c:\users\ira\source\repos\DFDS\DFDS\obj\Debug\netcoreapp2.0\DFDS.dll
+c:\users\ira\source\repos\DFDS\DFDS\obj\Debug\netcoreapp2.0\DFDS.pdb
