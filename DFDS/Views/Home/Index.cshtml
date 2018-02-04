@@ -102,7 +102,7 @@
     </video>
 </section>
 <section class=" container2">
-    <p>
-        <a asp-controller="Feedbacks" asp-action="Create"> Create feedback</a>
-    </p>
+    @{
+        Html.RenderPartial("~/Views/Feedbacks/Create.cshtml");
+    }
 </section>

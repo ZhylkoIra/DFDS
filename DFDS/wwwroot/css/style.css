@@ -207,7 +207,7 @@ button{
 	color: #fff;
 }
 
-button:active {
+button:active{
 	background: #5087ac;
 }
 
@@ -401,3 +401,31 @@ max-width: 370px;
 max-height: 280px;
 }
 
+/* ---- Feedback form ---- */
+
+.feedback{
+	margin: 1.25em 0;
+}
+
+.username label, .description label{
+	display: inline-block;
+	width: 10%;
+	margin-right: 10px;
+	font-weight: bold;
+}
+.username, .description{
+	padding: 1em;
+}
+
+.username{
+	margin: 0;
+}
+
+.description{
+	margin: 0 0 1.25em 0;
+}
+
+.description textarea{
+	width: 25%;
+	height: 140px;
+}
