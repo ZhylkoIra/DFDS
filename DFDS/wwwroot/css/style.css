@@ -381,13 +381,71 @@ article{
 }
 
 /* ---- Details ---- */
-
-summary {
-  	display: block;
+.detail p{
+	margin: 2em 0 2.5em 0;
+}
+.detail details{
+	margin: 12px 0;
+}
+.detail summary, .det-open dt a{
+	font-size: 1em;
+	line-height: 1.25;
+	color:#1b5786;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
-  summary::-webkit-details-marker {
+.detail summary {
+  	display: block;
+	border: 1px solid #d8dad9;
+	border-left: 4px solid #d8dad9;
+	padding: 12px 18px;
+}
+
+ .detail summary::-webkit-details-marker {
   	display: none;
+}
+
+.detail summary:after{
+	content:"\f067";
+  	font-family: FontAwesome;
+  	color: #43759b;
+  	float: right;
+}
+
+.detail summary:hover{
+	cursor: pointer;
+}
+
+.detail details[open]  summary{
+	border-left: 4px solid #002b45;
+	color: #002b45;
+}
+
+.detail details[open] summary:after {
+ 	content:"\f068";
+  	font-family: FontAwesome;
+  	color: #43759b;
+  	float: right;
+}
+
+.det-open {
+	margin: 0 1.5em;
+}
+
+.det-open dt {
+	margin-top: 2.5em;
+}
+
+.det-open dt a:after{
+	content: "\f105";
+  	margin-left: 1.125em;
+  	font-family: FontAwesome;
+}
+
+.det-open dd{
+	margin: .75em 0;
+	font-size: 0.875em;
 }
 
 /* ---- Video gallery ---- */
